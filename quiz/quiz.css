@@ -1,0 +1,120 @@
+#start,
+#quiz-container,
+#results {
+    text-align: center;
+    padding: 20px;
+}
+
+#start-btn,
+#next {
+    margin-top: 20px;
+}
+
+.answers {
+    margin-top: 20px;
+}
+
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+#start,
+#quiz-container,
+#results {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#start-btn,
+#next {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#start-btn:hover,
+#next:hover {
+    background-color: #45a049;
+}
+
+.answers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.answers label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.answers input[type="radio"] {
+    margin-right: 5px;
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.answers input[type="radio"] + label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.answers input[type="radio"] + label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #4caf50;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.answers input[type="radio"]:checked + label {
+    color: #4caf50;
+}
+
+.answers input[type="radio"]:focus + label {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.answers input[type="radio"]:hover + label {
+    color: #45a049;
+}
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.answer-button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+    display: block;
+    text-align: left;
+}
+
+.answer-button:hover {
+    background-color: #45a049;
+}
